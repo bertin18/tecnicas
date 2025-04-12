@@ -6,22 +6,21 @@ public class Conjunto {
     public  int[] array;
     private final  int tamanho;
 
-    // Construtor que recebe o tamanho do conjunto e gera o conjunto com números aleatórios
+
     public Conjunto(int tamanho) {
         this.tamanho = tamanho;
         this.array = new int[tamanho];
         Random rand = new Random();
         for (int i = 0; i < tamanho; i++) {
-            array[i] = rand.nextInt(101); // números aleatórios de 0 a 1000
+            array[i] = rand.nextInt(101); // números aleatórios de 0 a 100
         }
     }
 
-    // Método para obter o tamanho do conjunto
     public int obterTamanhoConjunto() {
         return tamanho;
     }
 
-    // Método para exibir o conjunto
+    
     public void mostrarConjunto() {
         System.out.print("Conjunto gerado: [");
         for (int i = 0; i < tamanho; i++) {

@@ -5,18 +5,18 @@ public class Main {
 
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
-            Conjunto conjuntoA = null, conjuntoB = null;
+            Conjunto conjuntoA = null;
+            Conjunto conjuntoB = null;
             int opcao;
             int tamanhoA = 0, tamanhoB = 0;
             
-            // Definindo o tamanho do primeiro conjunto
             System.out.print("Digite o tamanho do primeiro conjunto (A): ");
             tamanhoA = scanner.nextInt();
             conjuntoA = new Conjunto(tamanhoA);
             System.out.println("Conjunto A gerado com sucesso.");
             
             // Perguntando se o usuário quer definir um segundo conjunto
-            System.out.print("Deseja definir um segundo conjunto (B)? (1 - Sim, 0 - Não): ");
+           System.out.print("Deseja definir um segundo conjunto (B)? (1 - Sim, 0 - Nao): ");
             int resposta = scanner.nextInt();
             if (resposta == 1) {
                 
